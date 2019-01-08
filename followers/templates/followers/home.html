@@ -1,112 +1,441 @@
-<h1>All my jobs</h1>
 
-{% for follow in followers.all %}
+<!DOCTYPE html>
+<html amp lang="en" itemscope itemtype="http://schema.org/Article">
 
-{{ follow.summary }}
+<head>
+    <meta charset="UTF-8">
+    <title>{TR} SocialUpgrade | SocialUpgrade</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-{% endfor %}
-
-
-
-<!doctype html>
-<html lang="en">
-{% load static %}
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Jekyll v3.8.5">
-    <title>INSTA 2.0</title>
-    
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-<link href="/docs/4.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <meta name="description" content="Our fully managed service helps you grow your Instagram followers through organic marketing techniques. Real growth, real people.">
 
 
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-      }
 
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
+    <meta name="google-site-verification" content="F-_Kdna_aFwMQGgW_bjqO9X50WfUMQ9588YZgo3_9sg">
+    <meta name="google-site-verification" content="DS70h_WBVLROLzS5Cg_tJ1W_N1idJfjItb6HEtZS0SY" />
+
+    <!-- Google analytics/optimize -->
+    <style>.async-hide { opacity: 0 !important} </style>
+    <script>(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
+      h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
+      (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+    })(window,document.documentElement,'async-hide','dataLayer',4000,
+      {'GTM-5DPV8DT':true});</script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-100584297-1', 'auto');
+      ga('require', 'GTM-5DPV8DT');
+      ga('send', 'pageview');
+    </script>
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-T6KDTJ7');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- SiftScience script -->
+    <script type="text/javascript">
+      var _user_id = ''; // Set to the user's ID, username, or email address, or '' if not yet known.
+      var _session_id = 'ee26ac86-d53f-464f-a3a7-6ab181b67753'; // Set to a unique session ID for the visitor's current browsing session.
+
+      var _sift = window._sift = window._sift || [];
+      _sift.push(['_setAccount', 'ba85926f78']);
+      _sift.push(['_setUserId', _user_id]);
+      _sift.push(['_setSessionId', _session_id]);
+      _sift.push(['_trackPageview']);
+
+      (function() {
+        function ls() {
+          var e = document.createElement('script');
+          e.src = 'https://cdn.siftscience.com/s.js';
+          document.body.appendChild(e);
         }
+        if (window.attachEvent) {
+          window.attachEvent('onload', ls);
+        } else {
+          window.addEventListener('load', ls, false);
+        }
+      })();
+    </script>
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://use.typekit.net/rcc7khr.css">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" href="/favicon_180x180.png" sizes="180x180">
+    <link rel="icon" type="image/png" href="/favicon_32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/favicon_16x16.png" sizes="16x16">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#406df7">
+    <meta name="theme-color" content="#406df7">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="static/css/style-8e5ec72218.css"/>
+
+    <!-- Scripts -->
+
+    <script type="application/ld+json">
+      {
+          "@context": "http://schema.org",
+          "@type": "LocalBusiness",
+            "url": "https://socialupgrade.co/",
+          "name": "Vibbi",
+          "description": "Our fully managed service helps you grow your Instagram followers through organic marketing techniques. Real growth, real people.",
+          "email": "hello@socialupgrade.co",
+          "sameAs": ["https://www.facebook.com/Vibbi-1881764018734115/", "https://twitter.com/MeetVibbi"],
+          "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "4.8",
+              "ratingCount": "143"
+          }
       }
-    </style>
-    <!-- Custom styles for this template -->
-    <link href="pricing.css" rel="stylesheet">
-  </head>
-  <body>
-    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
-        <img src="{% static 'INSTA 2.0.png' %}" width="100" height="100"></img> 
-  <h5 class="my-0 mr-md-auto font-weight-normal"></h5>
-  <nav class="my-2 my-md-0 mr-md-3">
-    <a class="p-2 text-dark" href="#">Özellikler</a>
-    <a class="p-2 text-dark" href="#">İletişim</a>
-    <a class="p-2 text-dark" href="#">Ücretlendirme</a>
-  </nav>
-  <a class="btn btn-outline-primary" href="#">Kayıt ol</a>
+      </script>
+
+    <!-- Useproof script -->
+    <script src='https://cdn.useproof.com/proof.js?acc=aItknYKCX0WE4OhOcyspIUdqWCZ2' async></script>
+
+</head>
+
+<body>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T6KDTJ7" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<div class="top-alert">
 </div>
 
-<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-  <h1 class="display-4">INSTA 2.0 FİYATLARI</h1>
-  <p class="lead">Insta 2.0 - Instagram için geliştirilmiş bir otomasyon uygulamasıdır.</p>
-</div>
+<header class="home">
+    <div class="navbar">
+        <nav class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="/"></a>
+                        <button type="button" class="navbar-toggle collapsed">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+    
+                    <div class="collapse navbar-collapse" id="vibbi-menu">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="/pricing" >Pricing</a></li>
+                            <li><a href="/how-it-works" >How it works</a></li>
+                            <li><a href="/reviews" >Reviews</a></li>
+                            <li><a href="/faq" >FAQ</a></li>
+                            <li><a href="/blog">Blog</a></li>
+                            <li class="login"><a class="btn btn-outline" href="/member/login">Log in</a></li>
+                            <li><a href="/pricing" class="btn btn-outline signup hidden-sm">Get started</a></li>
+    
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div>
+            </div>
+        </nav>
+    </div>
 
+        <div class="hero-new">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="hero-text">
+                            <h1>Powerful<br>Instagram Growth</h1>
+                            <p class="first">
+                                Our service helps you grow your Instagram<br class="hidden-sm hidden-xs">
+                                through organic marketing techniques.
+                            </p>
+                            <p class="second">Real growth, real people.</p>
+                            <div class="header-cta-btn">
+                                <a href="/pricing" class="btn btn-primary">Get started</a>
+                            </div>
+                        </div>
+                        <div class="notifications">
+                            <!-- Dynamically loaded instagram notifications will show up here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+</header>
+
+<!-- Growth -->
 <div class="container">
-  <div class="card-deck mb-3 text-center">
-    <div class="card mb-4 shadow-sm">
-      <div class="card-header">
-        <h4 class="my-0 font-weight-normal">Ücretsiz</h4>
-      </div>
-      <div class="card-body">
-        <h1 class="card-title pricing-card-title">0 TL <small class="text-muted">/ 3 gün</small></h1>
-        <ul class="list-unstyled mt-3 mb-4">
-          <li>1 Kullanıcı</li>
-          <li>Otomatik Follow</li>
-          <li>Otomatik Unfollow</li>
-          <li>E-mail Destek</li>
-          <li></li>
-        </ul>
-        <button type="button" class="btn btn-lg btn-block btn-outline-primary">Ücretsiz Üye Olun</button>
-      </div>
-    </div>
-    <div class="card mb-4 shadow-sm">
-      <div class="card-header">
-        <h4 class="my-0 font-weight-normal">Profesyonel</h4>
-      </div>
-      <div class="card-body">
-        <h1 class="card-title pricing-card-title">200 TL <small class="text-muted">/ ay</small></h1>
-        <ul class="list-unstyled mt-3 mb-4">
-          <li>1 Kullanıcı</li>
-          <li>Otomatik Follow</li>
-          <li>Otomatik Unfollow</li>
-          <li>Otomatik Like</li>
-          <li>Otomatik Post (Ücretli)</li>
-        </ul>
-        <button type="button" class="btn btn-lg btn-block btn-primary">Hemen Başlayın</button>
-      </div>
-    </div>
-    <div class="card mb-4 shadow-sm">
-      <div class="card-header">
-        <h4 class="my-0 font-weight-normal">Combo Paket</h4>
-      </div>
-      <div class="card-body">
-        <h1 class="card-title pricing-card-title">500 TL <small class="text-muted">/ 3 ay</small></h1>
-        <ul class="list-unstyled mt-3 mb-4">
-          <li>1 Kullanıcı</li>
-          <li>Otomatik Follow</li>
-          <li>Otomatik Unfollow</li>
-          <li>Otomatik Like</li>
-          <li>Otomatik Post (1 Ay Ücretsiz)</li>
-        </ul>
-        <button type="button" class="btn btn-lg btn-block btn-primary">Hemen Başlayın</button>
-      </div>
-    </div>
-  </div>
+    <section class="row info-new">
+        <div class="col-xs-12 visible-xs">
+            <div class="mobi-title">Why SocialUpgrade?</div>
+        </div>
+        <div class="col-sm-5 col-sm-push-7 text-center">
+            <div class="res-img">
+                <img src="/static/images/land-growth.jpg" width="350" height="350" style="max-width:350px">
+            </div>
+        </div>
+        <div class="col-sm-7 col-sm-pull-5">
+            <h2>Real people.<br>Real growth.</h2>
+            <p>Don’t waste your money on other services that offer fake likes and fake followers who don’t interact with your account at all.</p>
+            <p>With our genuine marketing techniques, your Instagram account will get the exposure it needs to generate <b>organic, active followers</b>.</p>
+        </div>
+    </section>
 </div>
+
+<!-- Carousel -->
+<div class="container-fluid">
+    <section class="row info brand-carousel-wrap">
+        <div class="col-xs-12">
+            <div id="carousel-gradient-wrap" class="carousel-alt">
+                <div class="brand-carousel-gradient left"></div>
+                <div class="brand-carousel-gradient right"></div>
+                <div id="brand-carousel">
+                    <div class="carousel-item" style="background-image: url('/static/images/landing_carousel_alt/musicians.jpg')">
+                        <div class="title">Musicians</div>
+                    </div>
+                    <div class="carousel-item" style="background-image: url('/static/images/landing_carousel_alt/hospitality.jpg')">
+                        <div class="title">Hospitality</div>
+                    </div>
+                    <div class="carousel-item" style="background-image: url('/static/images/landing_carousel_alt/travel.jpg')">
+                        <div class="title">Travel</div>
+                    </div>
+                    <div class="carousel-item" style="background-image: url('/static/images/landing_carousel_alt/fashion.jpg')">
+                        <div class="title">Fashion</div>
+                    </div>
+                    <div class="carousel-item" style="background-image: url('/static/images/landing_carousel_alt/cosmetics.jpg')">
+                        <div class="title">Cosmetics</div>
+                    </div>
+                    <div class="carousel-item" style="background-image: url('/static/images/landing_carousel_alt/photography.jpg')">
+                        <div class="title">Photography</div>
+                    </div>
+                    <div class="carousel-item" style="background-image: url('/static/images/landing_carousel_alt/ecommerce.jpg')">
+                        <div class="title">E-Commerce</div>
+                    </div>
+                    <div class="carousel-item" style="background-image: url('/static/images/landing_carousel_alt/health.jpg')">
+                        <div class="title">Health</div>
+                    </div>
+                    <div class="carousel-item" style="background-image: url('/static/images/landing_carousel_alt/lifestyle.jpg')">
+                        <div class="title">Lifestyle</div>
+                    </div>
+                    <div class="carousel-item" style="background-image: url('/static/images/landing_carousel_alt/modeling.jpg')">
+                        <div class="title">Modeling</div>
+                    </div>
+                    <div class="carousel-item" style="background-image: url('/static/images/landing_carousel_alt/parenting.jpg')">
+                        <div class="title">Parenting</div>
+                    </div>
+                </div>
+                <div class="brand-info">
+                    <div class="container">
+                        <section class="info-new">
+                            <h2>Target your <br class="visible-xs">followers.</h2>
+                            <p>Instagram is a diverse community with over 800 million users – with our service, you can target any type of user from any industry.</p>
+                            <p>Whether you’re an individual, a business, or an influencer, our targeted growth will help you <b>get Instagram famous</b>.</p>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- Set and forget -->
+<div class="container">
+    <section class="row info-new">
+        <div class="col-sm-5 col-sm-push-7 text-center">
+            <div class="res-img">
+                <img src="/static/images/land-report.png" width="350" height="310" style="max-width:350px">
+            </div>
+        </div>
+        <div class="col-sm-7 col-sm-pull-5">
+            <h2>Set it and<br class="visible-xs"> forget it.</h2>
+            <p class="squeeze">Setting up your campaign is easy – that means no setup fees, no downloads and no complicated settings.</p>
+            <p class="squeeze">Then it’s hands off. <b>Your growth strategist does all the hard work for you</b> – updating you with your results along the way.</p>
+        </div>
+    </section>
+</div>
+
+<!-- Grow Now -->
+<div class="container">
+    <section class="row info-grow">
+        <div class="backdrop">
+            <h3>Grow your Instagram account now</h3>
+            <a href="/pricing" class="btn btn-primary long">Get started</a>
+        </div>
+    </section>
+</div>
+
+<!-- Reviews -->
+<div class="container">
+    <section class="row info-review ">
+        <div class="col-xs-12">
+            <h3 >Trusted by <br class="visible-xs"><b>5,000+ people</b></h3>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="review-item">
+                        <img src="/static/images/landing_user/milanasmakeup.jpg" height="96" width="96">
+                        <p>Ever since I started using SocialUpgrade <span>I've noticed significant growth</span> that has helped me become a more serious fashion influencer.*</p>
+                        <p><b>@milanasmakeup</b></p>
+                    </div>
+                    <div class="review-item">
+                        <img src="/static/images/landing_user/ericramia.jpg" height="96" width="96">
+                        <p>SocialUpgrade has done wonders for my page. <span>Totally worth it!</span>*</p>
+                        <p><b>@ericaramia</b></p>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="review-item">
+                        <img src="/static/images/landing_user/miamibunny.jpg" height="96" width="96">
+                        <p><span>I've seen my sales increase exponentially</span> each month since I've started using SocialUpgrade.*</p>
+                        <p><b>@miamibunny</b></p>
+                    </div>
+                    <div class="review-item hidden-xs">
+                        <img src="/static/images/landing_user/jammestattoo.jpg" height="96" width="96">
+                        <p><span>Great and real service! Real accounts respond.</span> Very happy with service. I can happily recommend SocialUpgrade :)*</p>
+                        <p><b>@jammestattoo</b></p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="/reviews" class="btn btn-outline btn-teal long">See more reviews</a>
+            </div>
+        </div>
+    </section>
+</div>
+
+<div class="container-fluid footer footer-alt">
+  <footer>
+    <h1>It's time to grow<br> your Instagram</h1>
+    <div class="text-center">
+      <a href="/pricing" class="btn btn-primary">Get started</a>
+    </div>
+    <div class="footer-inner">
+
+      <hr>
+
+      <div class="row">
+
+        <div class="col-sm-4">
+          <div class="logo">
+            <a href="/">
+                <img src="/static/images/logo.svg" alt="SocialUpgrade Logo">
+            </a>
+          </div>
+        </div>
+
+        <div class="col-sm-8 nav-list-container">
+          <div class="nav-list nav-mobile-expand pull-right">
+              <ul>
+                <li><a href="/pricing">Pricing</a></li>
+                <li><a href="/how-it-works">How it works</a></li>
+                <li><a href="/reviews">Reviews</a></li>
+                <li><a href="/faq">FAQ</a></li>
+                <li class="last"><a href="/contact">Contact</a></li>
+                <li class="bordered hidden-xs hidden-sm"><a href="/pricing">Get started</a></li>
+              </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <hr class="visible-xs mini-hr">
+
+      <p class="disclaimer">
+          SocialUpgrade is not endorsed or certified by Instagram. All Instagram TM logos and trademarks displayed on this application are property of Instagram. *Results may vary.
+      </p>
+
+      <div class="nav-list">
+        <ul class="terms">
+          <li class="text xs-block">&copy; SocialUpgrade 2018</li>
+          <li><a href="/terms-of-service">Terms of use</a></li>
+          <li><a href="/privacy">Privacy policy</a></li>
+        </ul>
+        <ul class="footer-cc">
+          <li><img src="/static/images/cc-icons/Visa.svg" alt="Visa"></li>
+          <li><img src="/static/images/cc-icons/Amex.svg" alt="American express"></li>
+          <li><img src="/static/images/cc-icons/Mastercard.svg" alt="Mastercard"></li>
+          <li><img src="/static/images/cc-icons/JCB.svg" alt="JCB"></li>
+          <li><img src="/static/images/cc-icons/Discover.svg" alt="Discover"></li>
+          <li><img src="/static/images/cc-icons/DinersClub.svg" alt="Diner's club"></li>
+        </ul>
+      </div>
+
+    </div>
+  </footer>
+</div>
+<section class="mobileMenu home ">
+    <ul>
+        <li><a href="/pricing">Fiyatlandırma</a></li>
+        <li><a href="/how-it-works">Nasıl Çalışır?</a></li>
+        <li><a href="/reviews">Reviews</a></li>
+        <li><a href="/faq">FAQ</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="/member/login">Log in</a></li>
+    </ul>
+    <div class="mobile-cta">
+        <a href="/pricing" class="btn btn-primary">Get started</a>
+    </div>
+
+</section>
+
+<a class="navbar-brand mobile" href="/"></a>
+
+<!-- Set some window properties so they can be read/used by external js -->
+  <script>
+  window.mixpanelToken = 'eda8b953d57ed7b1fb094ecb5bbcc6c0';
+  </script>
+
+<script>
+    window._variantId = false;
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+
+<script src="static/js/app-610884b561.min.js"></script>
+
+<!-- bing noscript -->
+<noscript><img src="//bat.bing.com/action/0?ti=5695859&Ver=2" height="0" width="0" style="display:none; visibility: hidden;" /></noscript>
+
+<!-- facebook pixel noscript -->
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=333361610511560&ev=PageView&noscript=1" /></noscript>
+
+<!-- Fix to make useproof not show up until a certain point on landing page -->
+<script>
+  // TODO this is very hacky. Need to find a way to just detect when the useproof iframe is loaded and run this code then, but I just need to get to other things.
+  $(document).ready(function () {
+    var useproofOn = false;
+    setTimeout(function () {
+      $('iframe[src="https://cdn.useproof.com/proxy/index.html"] + div').addClass('useproofOff').addClass('useproofTransition');
+      $(window).scroll(function() {
+        if(!useproofOn && $(window).scrollTop() > 600) {
+          useproofOn = true;
+          $('iframe[src="https://cdn.useproof.com/proxy/index.html"] + div').removeClass('useproofOff');
+        } else if (useproofOn && $(window).scrollTop() === 0) {
+          useproofOn = false;
+          $('iframe[src="https://cdn.useproof.com/proxy/index.html"] + div').addClass('useproofOff');
+        }
+      });
+    }, 3000);
+  });
+</script>
+
 </body>
+
 </html>
