@@ -18,11 +18,13 @@ from django.urls import path
 import followers.views
 from django.conf import settings
 from django.conf.urls.static import static
+from django.conf.urls import url
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', followers.views.homepage, name='home'),
     path('follows/<int:follow_id>', followers.views.detail, name='detail'),
+    url(r'^register/$', followers.views.register, name='register'),
 ] 
 
 urlpatterns += static(settings.STATIC_URL, document_root = settings.STATIC_ROOT)

@@ -1,0 +1,36 @@
+warning: LF will be replaced by CRLF in followers/static/css/style-8e5ec72218.css.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in static/css/style-8e5ec72218.css.
+The file will have its original line endings in your working directory
+[1mdiff --git a/followers/static/css/style-8e5ec72218.css b/followers/static/css/style-8e5ec72218.css[m
+[1mindex 05048ed..2b06209 100644[m
+[1m--- a/followers/static/css/style-8e5ec72218.css[m
+[1m+++ b/followers/static/css/style-8e5ec72218.css[m
+[36m@@ -85,9 +85,9 @@[m [mbody {[m
+ .btn.btn-primary {[m
+     border-radius: 4px;[m
+     background-color: #0cc971;[m
+[31m-    height: 64px;[m
+[32m+[m[32m    height: 120px;[m
+     line-height: 64px;[m
+[31m-    font-size: 20px;[m
+[32m+[m[32m    font-size: 40px;[m
+     font-weight: 600;[m
+     color: #ffffff;[m
+     padding: 0 52px;[m
+[1mdiff --git a/static/css/style-8e5ec72218.css b/static/css/style-8e5ec72218.css[m
+[1mindex 05048ed..2b06209 100644[m
+[1m--- a/static/css/style-8e5ec72218.css[m
+[1m+++ b/static/css/style-8e5ec72218.css[m
+[36m@@ -85,9 +85,9 @@[m [mbody {[m
+ .btn.btn-primary {[m
+     border-radius: 4px;[m
+     background-color: #0cc971;[m
+[31m-    height: 64px;[m
+[32m+[m[32m    height: 120px;[m
+     line-height: 64px;[m
+[31m-    font-size: 20px;[m
+[32m+[m[32m    font-size: 40px;[m
+     font-weight: 600;[m
+     color: #ffffff;[m
+     padding: 0 52px;[m
